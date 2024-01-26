@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
 import 'owl.carousel';
 
 @Component({
@@ -17,4 +16,11 @@ export class HomeOneComponent implements OnInit {
     
   }
 
+  redirectToSignin(){
+    window.location.href = "https://fassarlyfront.azurewebsites.net/#/auth/login";
+  }
+
+  redirectToSignup(){
+    window.location.href = "https://fassarlyfront.azurewebsites.net/#/auth/register";
+  }
 }
